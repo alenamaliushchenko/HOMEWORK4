@@ -54,8 +54,29 @@
             > console.log(showMonthName(14)); 
             MonthException Incorrect month number -->
         </p>    
-        <button onclick="toggleTask('output2', checkAge)" >Показати розв’язок</button>
+        <button onclick="toggleTask('output3', showMonthName)" >Показати розв’язок</button>
         <div id="output3" class="output"></div>
+    </div>
+    
+    <!-- Завдання 4 -->
+    <div class="task">
+        <h3>Завдання 4:</h3>
+        <p>Реалізуйте функцію showUser(id), яка приймає параметром користувацьке id і 
+            повертає об’єкт, який містить значення переданої id. 
+            Також функція викидає помилку у разі якщо введено від’ємне id.
+            Реалізуйте функцію showUsers(ids), яка приймає параметром масив користувацьких айді ids,
+            перевіряє з використанням функції showUser() кожен елемент масиву ids на коректність,
+            в разі виключної ситуації виводить повідомлення про помилку. 
+            Функція showUsers(ids) повертає масив об’єктів, де значеннями ключів є коректні елементи ids.
+        
+            <!-- Приклад роботи програми:
+        showUsers([7, -12, 44, 22]);
+        Error: ID must not be negative: -12
+        [ {id: 7}, {id: 44}, {id: 22} ] -->
+        
+        </p>    
+        <button onclick="toggleTask('output4', )" >Показати розв’язок</button>
+        <div id="output4" class="output"></div>
     </div>
 
     <script type="module" src="./index.js"></script>
